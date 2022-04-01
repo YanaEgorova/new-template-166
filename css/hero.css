@@ -1,0 +1,40 @@
+.hero__wrapper-main {
+    background-color: var(--second-brand-color);
+}
+.hero {
+    text-align: center;
+    padding: 18rem 0 10rem;
+}
+.hero .title {
+    margin-bottom: 2rem;
+}
+
+
+
+@media screen and (min-width: 1440px)  {
+    .hero {
+        text-align: left;
+        padding: 30rem 15rem 25rem;
+    }
+    .hero .btn {
+        margin-left: 0;
+    }
+    .hero__block {
+        border-left: .5rem solid var(--main-text-color);
+        padding-left: 5rem;
+    }
+    .hero .title {
+        position: relative;
+        width: fit-content;
+    }
+    .hero .title::after {
+        position: absolute;
+        display: block;
+        content: '';
+        top: calc(50% - .25rem);
+        right: -20rem;
+        height: .5rem;
+        background-color: var(--main-text-color);
+        width: 15rem;
+    }
+}
