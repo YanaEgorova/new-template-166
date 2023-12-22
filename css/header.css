@@ -18,9 +18,14 @@ body.open-menu {
     z-index: 99999;
     position: relative;
 }
+.header__flex {
+    display: flex;
+    align-items: center;
+}
 .cart__span-box {
     position: relative;
-    display: none;
+    display: flex;
+    margin: 0 1rem;
 }
 .cart__span-box svg {
     display: block;
